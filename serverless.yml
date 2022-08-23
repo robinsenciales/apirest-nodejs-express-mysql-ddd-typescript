@@ -1,0 +1,43 @@
+service: api-recargarapido
+frameworkVersion: '3'
+
+package:
+  exclude:
+    -./**
+  include:
+    -node-modules/**
+    -dist/**
+
+plugins:
+  # to transpile and minify your code
+  - serverless-plugin-optimize
+  # to be able to test your app offline
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  profile: recarga_rapido
+  stage: ${opt:stage, 'develop'} # Set the default stage used. AWS Default is dev
+  region: ${opt:region, 'us-east-1'} # Overwrite the default region used. AWS Default is us-east-1
+  lambdaHashingVersion: '20201221'
+  # RAM usage is only about 150 MiB, but need bigger RAM to speed up CPU to avoid timeout
+  memorySize: 1024 # Overwrite the default memory size. Default is 1024
+  timeout: 15 # The default is 6 seconds. Note: API Gateway current maximum is 30 seconds
+  apiGateway:
+    shouldStartNameWithService: true
+    # minimumCompressionSize: 1024 # Compress response when larger than specified size in bytes (must be between 0 and 10485760)
+    binaryMediaTypes: # Optional binary media types the API might return
+      - application/octet-stream
+      - application/pdf
+
+functions:
+  main:
+    handler: dist/handler.serverless
+    package:
+      include:
+        - dist/handler.js
+    events:
+      - http:
+          method: any
+          path: /{any+}
