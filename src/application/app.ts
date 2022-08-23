@@ -28,6 +28,9 @@ app.use((req: any, res: any, next: any) => {
     next();
 });
 
+// Setting
+app.disable('x-powered-by');
+
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/languages', languageRoutes);
