@@ -1,4 +1,4 @@
-import app from "./application/app";
+import app from "./app/application/app";
 
 // Settings
 app.set('port', 4000);

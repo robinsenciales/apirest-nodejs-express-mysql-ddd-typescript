@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "ts-node-dev src/main.ts",
     "build": "tsc",
-    "start": "node dist/src/main.js",
+    "start": "node dist/main.js",
     "test": "jest",
     "serverless:start": "serverless offline start",
     "serverless:deploy": "npm run build && serverless deploy -s production"

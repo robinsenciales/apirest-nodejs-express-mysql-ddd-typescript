@@ -1,4 +1,4 @@
-import { Params } from '../_types/common.interface';
+import { Params } from '../types/common.interface';
 import * as emailValidator from 'email-validator';
 import { util } from "../../kernel/util";
 

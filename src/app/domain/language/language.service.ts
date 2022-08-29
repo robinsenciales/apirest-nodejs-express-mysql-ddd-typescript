@@ -1,10 +1,10 @@
 import { LanguageRepository } from './language.repository';
-import { Params } from '../_types/common.interface';
+import { Params } from '../types/common.interface';
 import { LanguageFactory } from "./language.factory";
 
 import { injectable, inject } from "inversify";
 import "reflect-metadata";
-import { TYPES } from '../_types';
+import { TYPES } from '../types/index';
 
 @injectable()
 class LanguageService {

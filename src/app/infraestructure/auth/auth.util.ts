@@ -1,4 +1,4 @@
-import { Params } from '../../domain/_types/common.interface';
+import { Params } from '../../domain/types/common.interface';
 import * as jwt from 'jsonwebtoken'
 import config from "../../kernel/config";
 import { AuthUtil } from '../../domain/auth/auth.util';

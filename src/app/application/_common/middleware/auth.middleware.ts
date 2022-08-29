@@ -3,7 +3,7 @@ import { container } from '../../inversify.config';
 import { AuthUtil } from '../../../domain/auth/auth.util';
 import { UserRepository } from '../../../domain/auth/user.repository';
 
-import { TYPES } from '../../../domain/_types/index';
+import { TYPES } from '../../../domain/types/index';
 
 function AuthMiddleware() {
 

@@ -1,5 +1,5 @@
 import {describe, expect, test} from '@jest/globals';
-import app from "../application/app";
+import app from "../app/application/app";
 import request from 'supertest';
 
 

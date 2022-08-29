@@ -1,6 +1,6 @@
 import { LanguageRepository } from '../../domain/language/language.repository';
 import getEntityManager from '../../kernel/db'
-import { Params } from '../../domain/_types/common.interface';
+import { Params } from '../../domain/types/common.interface';
 
 import { injectable } from "inversify";
 import "reflect-metadata";

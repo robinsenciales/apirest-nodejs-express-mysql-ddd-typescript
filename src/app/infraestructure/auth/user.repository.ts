@@ -1,4 +1,4 @@
-import { Params } from '../../domain/_types/common.interface';
+import { Params } from '../../domain/types/common.interface';
 import getEntityManager from '../../kernel/db'
 import { UserRepository } from '../../domain/auth/user.repository';
 
