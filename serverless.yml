@@ -17,7 +17,7 @@ plugins:
 provider:
   name: aws
   runtime: nodejs14.x
-  profile: recarga_rapido
+  profile: default
   stage: ${opt:stage, 'develop'} # Set the default stage used. AWS Default is dev
   region: ${opt:region, 'us-east-1'} # Overwrite the default region used. AWS Default is us-east-1
   lambdaHashingVersion: '20201221'
