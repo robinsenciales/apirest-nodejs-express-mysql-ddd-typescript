@@ -1,7 +1,7 @@
 import httpStatus from 'http-status';
 import { container } from '../inversify.config';
 import { LanguageService } from '../../domain/language/language.service';
-import { TYPES } from '../../domain/types';
+import { TYPES } from '../../domain/_types/index';
 
 function LanguageController() {
     return Object.freeze({

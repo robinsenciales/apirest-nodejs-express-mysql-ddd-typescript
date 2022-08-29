@@ -8,7 +8,7 @@ import { LanguageRepositoryImpl } from "../infraestructure/language/language.rep
 
 import { Container } from "inversify";
 import { AuthHelper } from "../domain/auth/auth.helper";
-import { TYPES } from "../domain/types";
+import { TYPES } from "../domain/_types";
 import { AuthUtil } from "../domain/auth/auth.util";
 import { UserRepository } from "../domain/auth/user.repository";
 import { LanguageRepository } from "../domain/language/language.repository";

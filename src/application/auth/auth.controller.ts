@@ -1,7 +1,7 @@
 import httpStatus from 'http-status';
 import { container } from '../inversify.config';
 import { AuthService } from '../../domain/auth/auth.service';
-import { TYPES } from '../../domain/types';
+import { TYPES } from '../../domain/_types/index';
 
 function AuthController() {
     return Object.freeze({

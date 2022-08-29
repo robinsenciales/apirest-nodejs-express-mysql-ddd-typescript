@@ -1,4 +1,4 @@
-import { Params } from '../../domain/types/common.interface';
+import { Params } from '../../domain/_types/common.interface';
 import getEntityManager from '../../kernel/db'
 import { UserRepository } from '../../domain/auth/user.repository';
 
@@ -7,7 +7,7 @@ import "reflect-metadata";
 
 @injectable()
 export class UserRepositoryImpl implements UserRepository {
-    
+
     async findByUsername({ username }: Params) {
         const em = await getEntityManager()
         const result = await em.query('SELECT id, name, role, username, email, password FROM user WHERE username = ?', username)

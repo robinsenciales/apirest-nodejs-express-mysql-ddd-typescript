@@ -1,4 +1,4 @@
-import { Params } from '../types/common.interface';
+import { Params } from '../_types/common.interface';
 import { AuthFactory } from "./auth.factory";
 import { AuthHelper } from './auth.helper';
 import { UserRepository } from "./user.repository";
@@ -7,7 +7,7 @@ import { AuthUtil } from './auth.util';
 
 import { injectable, inject } from "inversify";
 import "reflect-metadata";
-import { TYPES } from '../types';
+import { TYPES } from '../_types';
 
 @injectable()
 class AuthService {

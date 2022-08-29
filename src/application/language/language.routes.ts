@@ -1,7 +1,7 @@
-import { AuthMiddleware } from './../middleware/auth.middleware';
+import { AuthMiddleware } from '../_common/middleware/auth.middleware';
 import { Router } from 'express';
-import makeExpressCallback from '../express-callback'
-import { LanguageController } from '../controllers/language.controller'
+import makeExpressCallback from '../_common/express-callback/index'
+import { LanguageController } from './language.controller'
 
 
 const

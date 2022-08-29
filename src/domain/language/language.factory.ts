@@ -1,4 +1,4 @@
-import { Params } from '../types/common.interface';
+import { Params } from '../_types/common.interface';
 import { util } from "../../kernel/util";
 
 class LanguageFactory {

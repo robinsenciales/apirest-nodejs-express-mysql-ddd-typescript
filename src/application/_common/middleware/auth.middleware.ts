@@ -1,9 +1,9 @@
 import httpStatus from 'http-status'
-import { container } from '../inversify.config';
-import { AuthUtil } from '../../domain/auth/auth.util';
-import { UserRepository } from '../../domain/auth/user.repository';
+import { container } from '../../inversify.config';
+import { AuthUtil } from '../../../domain/auth/auth.util';
+import { UserRepository } from '../../../domain/auth/user.repository';
 
-import { TYPES } from '../../domain/types';
+import { TYPES } from '../../../domain/_types/index';
 
 function AuthMiddleware() {
 

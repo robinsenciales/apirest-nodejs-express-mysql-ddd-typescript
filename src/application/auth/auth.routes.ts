@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import makeExpressCallback from '../express-callback'
-import { AuthController } from '../controllers/auth.controller'
+import makeExpressCallback from '../_common/express-callback/index'
+import { AuthController } from './auth.controller'
 
 const
     authRouter = Router(),

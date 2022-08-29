@@ -3,8 +3,8 @@ import morgan from 'morgan';
 import cors from 'cors';
 
 // Routes
-import authRoutes from './routes/auth.routes';
-import languageRoutes from './routes/language.routes';
+import authRoutes from './auth/auth.routes';
+import languageRoutes from './language/language.routes';
 
 const app = express();
 
